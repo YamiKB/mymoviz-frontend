@@ -21,7 +21,7 @@ function Home() {
   const [dataMovies, setDataMovies] = useState([])
 
   useEffect(() => {
-   fetch('mymoviz-backend-pearl-six.vercel.app')
+   fetch('https://mymoviz-backend-pearl-six.vercel.app/')
      .then(response => response.json())
      .then(data => {
       const moviesArray = data.movies.map(film => ({
